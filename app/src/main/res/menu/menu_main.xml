@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="es.esy.elvinmorales48.petagram.MainActivity">
+
+    <item
+        android:id="@+id/menuActionContacto"
+        android:title="Contacto"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/menuActionAcercaDe"
+        android:title="Acerca de"
+        android:orderInCategory="200"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menuActionFavorito"
+        android:icon="@drawable/start"
+        android:orderInCategory="300"
+        app:showAsAction="always"
+        android:title="Favoritos"
+        />
+</menu>

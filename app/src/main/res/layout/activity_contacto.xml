@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="es.esy.elvinmorales48.petagram.ContactoActivity">
+
+    <include
+        android:id="@+id/toolbarSub"
+        layout="@layout/toolbar_sup"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Información requerida"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextInputLayout_nombreCompleto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="12dp">
+
+        <EditText
+            android:id="@+id/EditText_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese su nombre"
+            android:inputType="textPersonName"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="12dp">
+
+        <EditText
+            android:id="@+id/EditText_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese su correo"
+            android:inputType="textEmailAddress"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="12dp">
+
+        <EditText
+            android:id="@+id/EditText_mensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese su mensaje"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:lines="4"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/Button_enviarMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="Enviar Comentario"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
